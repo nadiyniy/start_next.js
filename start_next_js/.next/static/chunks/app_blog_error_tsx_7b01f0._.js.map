@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sections": [
-    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/app/blog/error.tsx"],"sourcesContent":["\"use client\";\nexport default function ErrorWrapper({ error }: { error: Error }) {\n  return <h1>Ooops... {error.message}</h1>;\n}\n"],"names":[],"mappings":";;;;;AAAA;;AACe,SAAS,aAAa,EAAE,KAAK,EAAoB;IAC9D,qBAAO,wLAAC;;YAAG;YAAU,MAAM,OAAO;;;;;;;AACpC;KAFwB"}},
-    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
