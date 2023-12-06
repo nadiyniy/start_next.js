@@ -7,7 +7,7 @@ async function getData() {
       revalidate: 60,
     },
   });
-  if (!response.ok) throw new Error("tyt pomylka");
+  if (!response.ok) throw new Error("Error 404 - custom");
   return response.json();
 }
 
