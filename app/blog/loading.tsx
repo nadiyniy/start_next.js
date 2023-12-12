@@ -1,3 +1,5 @@
+import Loader from "@/components/Loader/Loader";
+
 export default function LoadingPost() {
-  return <h1>Loading...</h1>;
+  return <Loader />;
 }

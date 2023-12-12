@@ -1,3 +1,5 @@
+import Loader from "@/components/Loader/Loader";
+
 export default function LoadingAbout() {
-  return <h1>Loading About...</h1>;
+  return <Loader />;
 }

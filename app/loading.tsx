@@ -1,3 +1,5 @@
+import Loader from "@/components/Loader/Loader";
+
 export default function LoadingHome() {
-  return <h1>Loading Home...</h1>;
+  return <Loader />;
 }
