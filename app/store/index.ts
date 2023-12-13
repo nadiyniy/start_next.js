@@ -1,6 +1,6 @@
-import { create } from "zustand";
 import { getPostsBySearch } from "./../services/getposts";
 import { getAllPosts } from "../services/getposts";
+import { createWithEqualityFn } from "zustand/traditional";
 
 type usePosts = {
   posts: any[];
@@ -9,7 +9,7 @@ type usePosts = {
   getPostsBySearch: (value: string) => Promise<void>;
 };
 
-export const usePosts = create<usePosts>()((set) => ({
+export const usePosts = createWithEqualityFn<usePosts>()((set) => ({
   posts: [],
   isLoading: false,
   getAllPosts: async () => {
