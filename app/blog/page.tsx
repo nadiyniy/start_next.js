@@ -5,6 +5,7 @@ import PostSearch from "@/components/PostSearch/PostSearch";
 export const metadata: Metadata = {
   title: "Blog | Start Next.js",
 };
+
 export default function Blog() {
   return (
     <>

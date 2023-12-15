@@ -10,6 +10,7 @@ const Posts = () => {
     (state) => [state.posts, state.isLoading, state.getAllPosts],
     shallow
   );
+
   useEffect(() => {
     getAllPosts();
   }, [getAllPosts]);

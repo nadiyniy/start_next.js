@@ -31,13 +31,25 @@ const Navigation = ({ navLinks }: Props) => {
           </Link>
         );
       })}
-      {sessions?.data && <Link href="/profile">Profile</Link>}
+      {sessions?.data && (
+        <Link
+          className={`${pathname === "/profile" ? "active" : ""}`}
+          href="/profile"
+        >
+          Profile
+        </Link>
+      )}
       {sessions?.data ? (
         <Link href="#" onClick={() => signOut({ callbackUrl: "/" })}>
           Sign out
         </Link>
       ) : (
-        <Link href="/signin">Sign in</Link>
+        <Link
+          className={`${pathname === "/signin" ? "active" : ""}`}
+          href="/signin"
+        >
+          Sign in
+        </Link>
       )}
     </>
   );

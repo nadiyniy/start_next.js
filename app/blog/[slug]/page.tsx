@@ -1,4 +1,6 @@
+import { getAllPosts } from "@/app/services/getposts";
 import { Metadata } from "next";
+
 async function getData(id: string) {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${id}`,
@@ -17,6 +19,13 @@ type Props = {
     slug: string;
   };
 };
+
+export async function generateStaticParams() {
+  const posts: any[] = await getAllPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
 export async function generateMetadata({
   params: { slug },
